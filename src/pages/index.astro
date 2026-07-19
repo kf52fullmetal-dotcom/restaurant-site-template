@@ -1,0 +1,978 @@
+---
+// Shokudo Haru Landing Page
+---
+
+<html lang="ja">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="generator" content={Astro.generator} />
+		<title>食堂 はる | 地元の食材で、毎日の一皿を。</title>
+		<meta name="description" content="地元の新鮮な食材を使い、手作りにこだわった温かい家庭料理をお届けする「食堂 はる」の公式サイトです。日替わり定食や特製オムライスなど、毎日通いたくなる味をご用意しています。" />
+		
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Zen+Maru+Gothic:wght@500;700&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<!-- Header -->
+		<header class="header">
+			<div class="header-container">
+				<div class="logo-area">
+					<a href="#" class="logo-text">食堂 はる</a>
+					<span class="tagline">地元の食材で、毎日の一皿を。</span>
+				</div>
+				<nav class="nav-menu">
+					<a href="#about" class="nav-link">私たちのこと</a>
+					<a href="#menu" class="nav-link">おすすめ</a>
+					<a href="#info" class="nav-link">営業情報</a>
+					<a href="#access" class="nav-link">アクセス</a>
+				</nav>
+			</div>
+		</header>
+
+		<!-- Hero Section -->
+		<section class="hero" id="about">
+			<div class="hero-content">
+				<span class="hero-sub">どこか懐かしく、ほっとする味</span>
+				<h1 class="hero-title">ようこそ、<br>食堂 はるへ。</h1>
+				<p class="hero-desc">
+					「食堂 はる」では、地元の農家さんから毎日届く新鮮な野菜や旬の食材をたっぷり使って、体にやさしく温かい一皿を手作りしています。忙しい毎日の合間に、実家に帰ってきたような安心感と美味しいごはんをお楽しみください。
+				</p>
+				<div class="hero-buttons">
+					<a href="#menu" class="btn btn-primary">メニューを見る</a>
+					<a href="#info" class="btn btn-secondary">営業時間・アクセス</a>
+				</div>
+			</div>
+			<div class="hero-image-wrapper">
+				<img src="/images/teishoku.png" alt="食堂 はるの美味しい日替わり定食" class="hero-image" />
+				<div class="hero-badge">毎日手作り</div>
+			</div>
+		</section>
+
+		<!-- Menu Section -->
+		<section class="menu-section" id="menu">
+			<div class="section-header">
+				<span class="section-subtitle">RECOMMENDED MENU</span>
+				<h2 class="section-title">本日のおすすめメニュー</h2>
+				<p class="section-desc">地元の味覚をふんだんに取り入れた、当店自慢の3品です。</p>
+			</div>
+			
+			<div class="menu-grid">
+				<!-- Menu Item 1 -->
+				<div class="menu-card">
+					<div class="menu-img-container">
+						<img src="/images/teishoku.png" alt="はるの日替わり定食" class="menu-img" />
+					</div>
+					<div class="menu-info">
+						<div class="menu-header">
+							<h3 class="menu-name">はるの日替わり定食</h3>
+							<span class="menu-price">¥1,200 <small>(税込)</small></span>
+						</div>
+						<p class="menu-desc">地元の新鮮な魚やお肉をメインに、季節の小鉢が3つ付いた、栄養バランス抜群の定番定食です。</p>
+					</div>
+				</div>
+
+				<!-- Menu Item 2 -->
+				<div class="menu-card">
+					<div class="menu-img-container">
+						<img src="/images/omurice.png" alt="特製ふわとろオムライス" class="menu-img" />
+					</div>
+					<div class="menu-info">
+						<div class="menu-header">
+							<h3 class="menu-name">特製ふわとろオムライス</h3>
+							<span class="menu-price">¥980 <small>(税込)</small></span>
+						</div>
+						<p class="menu-desc">こだわり卵を贅沢に使い、チキンライスをふわふわとろとろの卵で包みました。特製デミグラスソースでお召し上がりください。</p>
+					</div>
+				</div>
+
+				<!-- Menu Item 3 -->
+				<div class="menu-card">
+					<div class="menu-img-container">
+						<img src="/images/curry.png" alt="季節のたっぷり野菜カレー" class="menu-img" />
+					</div>
+					<div class="menu-info">
+						<div class="menu-header">
+							<h3 class="menu-name">季節のたっぷり野菜カレー</h3>
+							<span class="menu-price">¥1,100 <small>(税込)</small></span>
+						</div>
+						<p class="menu-desc">10種類以上のスパイスをブレンドし、じっくり煮込んだルーに、素揚げした旬の地元野菜をたっぷりとトッピングしました。</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Information Grid Section (Hours & Access) -->
+		<section class="info-section" id="info">
+			<div class="info-container">
+				<!-- Hours Block -->
+				<div class="info-block hours-card">
+					<div class="info-icon-wrapper">
+						<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+					</div>
+					<h3 class="info-title">営業時間</h3>
+					<div class="hours-details">
+						<p class="hours-time">11:00 〜 21:00</p>
+						<p class="hours-sub">（ラストオーダー 20:30）</p>
+						<div class="hours-meta">
+							<span class="lunch-tag">ランチ 11:00 - 14:30</span>
+							<span class="dinner-tag">ディナー 17:00 - 21:00</span>
+						</div>
+						<p class="hours-closed">定休日：<span>火曜日</span>（祝日の場合は翌水曜日）</p>
+					</div>
+				</div>
+
+				<!-- Access Block -->
+				<div class="info-block access-card" id="access">
+					<div class="info-icon-wrapper">
+						<svg class="info-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+					</div>
+					<h3 class="info-title">アクセス</h3>
+					<div class="access-details">
+						<p class="access-postal">〒123-4567</p>
+						<p class="access-address">東京都はるか市桜町1-2-3</p>
+						<p class="access-phone">TEL: 03-1234-5678</p>
+						<p class="access-note">JR桜町駅南口より徒歩5分（駐車場 3台あり）</p>
+						<a href="https://maps.google.com/?q=東京都はるか市桜町1-2-3" target="_blank" rel="noopener noreferrer" class="btn btn-map">
+							<svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"></polygon><line x1="9" y1="3" x2="9" y2="18"></line><line x1="15" y1="6" x2="15" y2="21"></line></svg>
+							Googleマップで開く
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- SNS Section -->
+		<section class="sns-section">
+			<div class="sns-content">
+				<h2 class="sns-title">Instagram</h2>
+				<p class="sns-text">日替わり定食のメニューや、季節限定料理の入荷情報、店内の日常をInstagramで更新しています。ぜひフォローしてください！</p>
+				<a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="instagram-link" aria-label="食堂 はる 公式Instagram">
+					<span class="instagram-icon-wrapper">
+						<svg class="instagram-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+					</span>
+					<span>@shokudo_haru</span>
+				</a>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="footer-container">
+				<div class="footer-brand">
+					<span class="footer-logo">食堂 はる</span>
+					<p class="footer-tagline">地元の食材で、毎日の一皿を。</p>
+				</div>
+				<div class="footer-links">
+					<a href="#about">私たちのこと</a>
+					<a href="#menu">おすすめメニュー</a>
+					<a href="#info">営業情報</a>
+					<a href="#access">アクセス</a>
+				</div>
+				<p class="footer-copy">&copy; 2026 食堂 はる. All rights reserved.</p>
+			</div>
+		</footer>
+	</body>
+</html>
+
+<style>
+	/* --- Design System & Base Settings --- */
+	:root {
+		--font-main: 'Noto Sans JP', sans-serif;
+		--font-accent: 'Zen Maru Gothic', sans-serif;
+		
+		/* Warm & Natural Color Palette */
+		--color-bg: #FCF8F2; /* Creamy White */
+		--color-text: #2C1D11; /* Warm Dark Brown (much softer than black) */
+		--color-text-muted: #5C4A3A;
+		--color-primary: #D35400; /* Rich Terracotta Orange */
+		--color-primary-light: #E67E22; /* Warm Tangerine */
+		--color-primary-bg: #FBEFE5; /* Light Orange/Beige for accent block background */
+		--color-secondary: #2E7D32; /* Deep Forest Green for warm organic contrast */
+		--color-secondary-light: #388E3C;
+		--color-accent: #E67E22;
+		--color-card-bg: #FFFFFF;
+		--color-border: #EFE4D8;
+		--shadow-sm: 0 2px 8px rgba(44, 29, 17, 0.05);
+		--shadow-md: 0 8px 24px rgba(44, 29, 17, 0.08);
+		--shadow-lg: 0 16px 32px rgba(44, 29, 17, 0.12);
+		--radius-sm: 8px;
+		--radius-md: 16px;
+		--radius-lg: 24px;
+		--max-width: 1100px;
+		--transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+	}
+
+	/* Reset */
+	* {
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+	}
+
+	html {
+		scroll-behavior: smooth;
+	}
+
+	body {
+		font-family: var(--font-main);
+		background-color: var(--color-bg);
+		color: var(--color-text);
+		line-height: 1.7;
+		overflow-x: hidden;
+	}
+
+	a {
+		color: inherit;
+		text-decoration: none;
+		transition: var(--transition);
+	}
+
+	img {
+		max-width: 100%;
+		height: auto;
+		display: block;
+	}
+
+	/* --- Utility Components --- */
+	.btn {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		padding: 0.85rem 2rem;
+		font-weight: 700;
+		border-radius: 50px;
+		transition: var(--transition);
+		cursor: pointer;
+		font-family: var(--font-accent);
+		letter-spacing: 0.03em;
+		border: none;
+	}
+
+	.btn-primary {
+		background-color: var(--color-primary);
+		color: #ffffff;
+		box-shadow: 0 4px 12px rgba(211, 84, 0, 0.2);
+	}
+
+	.btn-primary:hover {
+		background-color: var(--color-primary-light);
+		transform: translateY(-2px);
+		box-shadow: 0 6px 16px rgba(211, 84, 0, 0.3);
+	}
+
+	.btn-secondary {
+		background-color: transparent;
+		color: var(--color-primary);
+		border: 2px solid var(--color-primary);
+	}
+
+	.btn-secondary:hover {
+		background-color: var(--color-primary-bg);
+		transform: translateY(-2px);
+	}
+
+	.btn-map {
+		background-color: var(--color-secondary);
+		color: #ffffff;
+		font-size: 0.95rem;
+		padding: 0.75rem 1.75rem;
+		box-shadow: 0 4px 10px rgba(46, 125, 50, 0.2);
+	}
+
+	.btn-map:hover {
+		background-color: var(--color-secondary-light);
+		transform: translateY(-2px);
+		box-shadow: 0 6px 14px rgba(46, 125, 50, 0.3);
+	}
+
+	.btn-icon {
+		width: 18px;
+		height: 18px;
+		margin-right: 8px;
+	}
+
+	/* Section Headings */
+	.section-header {
+		text-align: center;
+		margin-bottom: 3.5rem;
+	}
+
+	.section-subtitle {
+		font-family: var(--font-main);
+		font-weight: 700;
+		font-size: 0.85rem;
+		letter-spacing: 0.15em;
+		color: var(--color-primary);
+		display: block;
+		margin-bottom: 0.5rem;
+	}
+
+	.section-title {
+		font-family: var(--font-accent);
+		font-size: 2.2rem;
+		font-weight: 700;
+		color: var(--color-text);
+		position: relative;
+		display: inline-block;
+		padding-bottom: 12px;
+	}
+
+	.section-title::after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 60px;
+		height: 3px;
+		background-color: var(--color-primary);
+		border-radius: 2px;
+	}
+
+	.section-desc {
+		margin-top: 1rem;
+		color: var(--color-text-muted);
+		font-size: 1rem;
+	}
+
+	/* --- Header --- */
+	.header {
+		background-color: rgba(252, 248, 242, 0.9);
+		backdrop-filter: blur(8px);
+		border-bottom: 1px solid var(--color-border);
+		position: sticky;
+		top: 0;
+		z-index: 100;
+		transition: var(--transition);
+	}
+
+	.header-container {
+		max-width: var(--max-width);
+		margin: 0 auto;
+		padding: 1rem 1.5rem;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.logo-area {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.logo-text {
+		font-family: var(--font-accent);
+		font-size: 1.6rem;
+		font-weight: 700;
+		color: var(--color-primary);
+		line-height: 1.2;
+	}
+
+	.tagline {
+		font-size: 0.75rem;
+		color: var(--color-text-muted);
+		font-weight: 500;
+		margin-top: 2px;
+	}
+
+	.nav-menu {
+		display: flex;
+		gap: 1.5rem;
+	}
+
+	.nav-link {
+		font-weight: 500;
+		font-size: 0.95rem;
+		color: var(--color-text);
+		padding: 0.25rem 0.5rem;
+		position: relative;
+	}
+
+	.nav-link:hover {
+		color: var(--color-primary);
+	}
+
+	.nav-link::after {
+		content: '';
+		position: absolute;
+		bottom: -4px;
+		left: 50%;
+		transform: translateX(-50%) scaleX(0);
+		width: 80%;
+		height: 2px;
+		background-color: var(--color-primary);
+		transition: var(--transition);
+	}
+
+	.nav-link:hover::after {
+		transform: translateX(-50%) scaleX(1);
+	}
+
+	/* --- Hero Section --- */
+	.hero {
+		max-width: var(--max-width);
+		margin: 3rem auto;
+		padding: 0 1.5rem;
+		display: grid;
+		grid-template-columns: 1.1fr 0.9fr;
+		gap: 4rem;
+		align-items: center;
+	}
+
+	.hero-content {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.hero-sub {
+		font-family: var(--font-accent);
+		color: var(--color-primary);
+		font-size: 1.1rem;
+		font-weight: 700;
+		margin-bottom: 0.5rem;
+		border-left: 3px solid var(--color-primary);
+		padding-left: 10px;
+		line-height: 1;
+	}
+
+	.hero-title {
+		font-family: var(--font-accent);
+		font-size: 3.2rem;
+		line-height: 1.2;
+		color: var(--color-text);
+		margin-bottom: 1.5rem;
+		font-weight: 700;
+	}
+
+	.hero-desc {
+		font-size: 1.05rem;
+		color: var(--color-text-muted);
+		margin-bottom: 2rem;
+		text-align: justify;
+	}
+
+	.hero-buttons {
+		display: flex;
+		gap: 1rem;
+	}
+
+	.hero-image-wrapper {
+		position: relative;
+		border-radius: var(--radius-lg);
+		overflow: hidden;
+		box-shadow: var(--shadow-lg);
+	}
+
+	.hero-image {
+		width: 100%;
+		height: 450px;
+		object-fit: cover;
+		transition: var(--transition);
+	}
+
+	.hero-image-wrapper:hover .hero-image {
+		transform: scale(1.03);
+	}
+
+	.hero-badge {
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		background-color: var(--color-secondary);
+		color: #ffffff;
+		font-family: var(--font-accent);
+		font-weight: 700;
+		padding: 0.5rem 1.2rem;
+		border-radius: 50px;
+		font-size: 0.9rem;
+		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+	}
+
+	/* --- Menu Section --- */
+	.menu-section {
+		max-width: var(--max-width);
+		margin: 6rem auto;
+		padding: 0 1.5rem;
+	}
+
+	.menu-grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 2rem;
+	}
+
+	.menu-card {
+		background-color: var(--color-card-bg);
+		border-radius: var(--radius-md);
+		overflow: hidden;
+		box-shadow: var(--shadow-sm);
+		border: 1px solid var(--color-border);
+		transition: var(--transition);
+		display: flex;
+		flex-direction: column;
+	}
+
+	.menu-card:hover {
+		transform: translateY(-8px);
+		box-shadow: var(--shadow-md);
+		border-color: var(--color-primary-bg);
+	}
+
+	.menu-img-container {
+		height: 220px;
+		overflow: hidden;
+		position: relative;
+	}
+
+	.menu-img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		transition: var(--transition);
+	}
+
+	.menu-card:hover .menu-img {
+		transform: scale(1.08);
+	}
+
+	.menu-info {
+		padding: 1.5rem;
+		flex-grow: 1;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.menu-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+		margin-bottom: 0.75rem;
+		gap: 0.5rem;
+	}
+
+	.menu-name {
+		font-family: var(--font-accent);
+		font-size: 1.2rem;
+		font-weight: 700;
+		color: var(--color-text);
+	}
+
+	.menu-price {
+		color: var(--color-primary);
+		font-weight: 700;
+		font-size: 1.15rem;
+		white-space: nowrap;
+	}
+
+	.menu-price small {
+		font-size: 0.75rem;
+		font-weight: 400;
+		color: var(--color-text-muted);
+	}
+
+	.menu-desc {
+		font-size: 0.9rem;
+		color: var(--color-text-muted);
+		line-height: 1.6;
+	}
+
+	/* --- Information (Hours & Access) Section --- */
+	.info-section {
+		background-color: var(--color-primary-bg);
+		padding: 5rem 1.5rem;
+		margin-top: 6rem;
+	}
+
+	.info-container {
+		max-width: var(--max-width);
+		margin: 0 auto;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 3rem;
+	}
+
+	.info-block {
+		background-color: var(--color-card-bg);
+		padding: 3rem 2.5rem;
+		border-radius: var(--radius-lg);
+		box-shadow: var(--shadow-sm);
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		border: 1px solid rgba(211, 84, 0, 0.05);
+	}
+
+	.info-icon-wrapper {
+		width: 60px;
+		height: 60px;
+		background-color: var(--color-primary-bg);
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 1.5rem;
+		color: var(--color-primary);
+	}
+
+	.info-icon {
+		width: 28px;
+		height: 28px;
+	}
+
+	.info-title {
+		font-family: var(--font-accent);
+		font-size: 1.6rem;
+		font-weight: 700;
+		margin-bottom: 1.5rem;
+		color: var(--color-text);
+	}
+
+	/* Hours Card specifics */
+	.hours-details {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+	}
+
+	.hours-time {
+		font-family: var(--font-accent);
+		font-size: 2.2rem;
+		font-weight: 700;
+		color: var(--color-primary);
+		line-height: 1;
+		margin-bottom: 0.25rem;
+	}
+
+	.hours-sub {
+		font-size: 0.85rem;
+		color: var(--color-text-muted);
+		margin-bottom: 1.5rem;
+	}
+
+	.hours-meta {
+		display: flex;
+		gap: 1rem;
+		margin-bottom: 1.5rem;
+		width: 100%;
+		justify-content: center;
+	}
+
+	.hours-meta span {
+		font-size: 0.8rem;
+		font-weight: 500;
+		padding: 0.35rem 0.85rem;
+		border-radius: 4px;
+		background-color: var(--color-bg);
+	}
+
+	.lunch-tag {
+		border-left: 3px solid var(--color-secondary);
+	}
+
+	.dinner-tag {
+		border-left: 3px solid var(--color-primary);
+	}
+
+	.hours-closed {
+		font-weight: 500;
+		color: var(--color-text);
+		border-top: 1px solid var(--color-border);
+		padding-top: 1.25rem;
+		width: 100%;
+	}
+
+	.hours-closed span {
+		color: var(--color-primary);
+		font-weight: 700;
+	}
+
+	/* Access Card specifics */
+	.access-details {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+	}
+
+	.access-postal {
+		font-size: 0.9rem;
+		color: var(--color-text-muted);
+		font-weight: 500;
+	}
+
+	.access-address {
+		font-family: var(--font-accent);
+		font-size: 1.4rem;
+		font-weight: 700;
+		margin: 0.25rem 0 0.5rem 0;
+	}
+
+	.access-phone {
+		font-weight: 700;
+		font-size: 1.05rem;
+		margin-bottom: 0.5rem;
+	}
+
+	.access-note {
+		font-size: 0.85rem;
+		color: var(--color-text-muted);
+		margin-bottom: 2rem;
+	}
+
+	/* --- SNS Section --- */
+	.sns-section {
+		padding: 6rem 1.5rem;
+		background-color: var(--color-bg);
+		text-align: center;
+		position: relative;
+	}
+
+	.sns-section::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 80px;
+		height: 1px;
+		background-color: var(--color-border);
+	}
+
+	.sns-content {
+		max-width: 600px;
+		margin: 0 auto;
+	}
+
+	.sns-title {
+		font-family: var(--font-accent);
+		font-size: 1.8rem;
+		color: var(--color-text);
+		margin-bottom: 1rem;
+	}
+
+	.sns-text {
+		color: var(--color-text-muted);
+		margin-bottom: 2rem;
+		font-size: 0.95rem;
+	}
+
+	.instagram-link {
+		display: inline-flex;
+		align-items: center;
+		gap: 10px;
+		font-family: var(--font-accent);
+		font-size: 1.15rem;
+		font-weight: 700;
+		color: var(--color-primary);
+		padding: 0.75rem 2rem;
+		border-radius: 50px;
+		background-color: var(--color-card-bg);
+		border: 1px solid var(--color-border);
+		box-shadow: var(--shadow-sm);
+	}
+
+	.instagram-link:hover {
+		transform: scale(1.05);
+		border-color: var(--color-primary);
+		background-color: var(--color-primary-bg);
+		box-shadow: var(--shadow-md);
+	}
+
+	.instagram-icon-wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.instagram-icon {
+		width: 24px;
+		height: 24px;
+	}
+
+	/* --- Footer --- */
+	.footer {
+		background-color: #2C1D11; /* Beautiful dark chocolate color */
+		color: #EFE4D8;
+		padding: 4rem 1.5rem 2rem 1.5rem;
+		border-top: 2px solid var(--color-primary);
+	}
+
+	.footer-container {
+		max-width: var(--max-width);
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	.footer-brand {
+		margin-bottom: 2rem;
+	}
+
+	.footer-logo {
+		font-family: var(--font-accent);
+		font-size: 1.8rem;
+		font-weight: 700;
+		color: #ffffff;
+		display: block;
+		margin-bottom: 0.25rem;
+	}
+
+	.footer-tagline {
+		font-size: 0.85rem;
+		color: #BCAAA4;
+	}
+
+	.footer-links {
+		display: flex;
+		gap: 2rem;
+		margin-bottom: 3rem;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.footer-links a {
+		font-size: 0.9rem;
+		color: #D7CCC8;
+	}
+
+	.footer-links a:hover {
+		color: #ffffff;
+	}
+
+	.footer-copy {
+		font-size: 0.75rem;
+		color: #8D6E63;
+		border-top: 1px solid rgba(255, 255, 255, 0.05);
+		width: 100%;
+		padding-top: 1.5rem;
+	}
+
+	/* --- Responsive Design (Media Queries) --- */
+	@media (max-width: 968px) {
+		.hero {
+			grid-template-columns: 1fr;
+			gap: 3rem;
+			margin: 2rem auto 4rem auto;
+			text-align: center;
+		}
+
+		.hero-content {
+			align-items: center;
+		}
+
+		.hero-sub {
+			border-left: none;
+			border-bottom: 2px solid var(--color-primary);
+			padding-left: 0;
+			padding-bottom: 4px;
+		}
+
+		.hero-title {
+			font-size: 2.6rem;
+		}
+
+		.hero-desc {
+			text-align: center;
+		}
+
+		.hero-image-wrapper {
+			order: -1; /* Place image on top on mobile */
+		}
+
+		.hero-image {
+			height: 320px;
+		}
+
+		.menu-grid {
+			grid-template-columns: repeat(2, 1fr);
+			gap: 1.5rem;
+		}
+
+		.info-container {
+			grid-template-columns: 1fr;
+			gap: 2rem;
+		}
+
+		.info-block {
+			padding: 2.5rem 1.5rem;
+		}
+	}
+
+	@media (max-width: 640px) {
+		.header-container {
+			flex-direction: column;
+			gap: 1rem;
+			text-align: center;
+		}
+
+		.nav-menu {
+			gap: 1rem;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+
+		.hero-title {
+			font-size: 2.2rem;
+		}
+
+		.hero-buttons {
+			flex-direction: column;
+			width: 100%;
+			gap: 0.75rem;
+		}
+
+		.btn {
+			width: 100%;
+		}
+
+		.menu-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.menu-section {
+			margin: 4rem auto;
+		}
+
+		.section-title {
+			font-size: 1.8rem;
+		}
+
+		.info-section {
+			padding: 4rem 1rem;
+		}
+
+		.hours-time {
+			font-size: 1.8rem;
+		}
+
+		.hours-meta {
+			flex-direction: column;
+			gap: 0.5rem;
+			align-items: center;
+		}
+
+		.hours-meta span {
+			width: 80%;
+		}
+
+		.access-address {
+			font-size: 1.2rem;
+		}
+
+		.footer-links {
+			flex-direction: column;
+			gap: 1rem;
+			margin-bottom: 2rem;
+		}
+	}
+</style>
